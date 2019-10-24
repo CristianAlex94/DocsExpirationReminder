@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="edit_message">Introdu un mesaj</string>
+    <string name="title_activity_welcome">Pagina de acasă</string>
+    <string name="next">Următorul</string>
+    <string name="skip">Anteriorul</string>
+    <string name="start">Începe</string>
+    <string name="slide_1_title">Uită despre datele de expirare</string>
+    <string name="slide_1_desc">Când adaugi produse pe care le cumperi sau documente, ești în control cu toate datele de expirare.</string>
+    <string name="slide_2_title">Fără Reclame</string>
+    <string name="slide_2_desc">Nu există nicio reclamă care te-ar putea distrage sau enerva</string>
+    <string name="slide_3_title">Nimic de plătit</string>
+    <string name="slide_3_desc">Expiration Reminder va fi gratuită pentru totdeauna.</string>
+    <string name="slide_4_title">Simplu de folosit</string>
+    <string name="slide_4_desc">Dacă vrei să adaugi sau să editezi un document care expiră, nimic nu este mai ușor!</string>
+    <string name="button_label">Trimite Mesajul</string>
+    <string name="welcome_message">Bun venit la Activitatea Mesajul</string>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:key="user_category"
+        android:title="User">
+
+        <EditTextPreference
+            android:dialogTitle="Your Name"
+            android:dialogMessage="Enter your full name now"
+            android:inputType="textCapWords"
+            android:key="key_full_name"
+            android:title="Name"
+            android:summary="Alex-Cristi" />
+
+        <EditTextPreference
+            android:dialogTitle="Your Email"
+            android:dialogMessage="Enter your email now"
+            android:inputType="textEmailAddress"
+            android:key="key_email"
+            android:title="Email"
+            android:summary="crissalex112@hotmail.com" />
+    </PreferenceCategory>
+<PreferenceCategory
+    android:title="Player">
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="enable_timer"
+        android:title="Enable Sleep Timer"
+        android:summary="Enable or Disable sleep timer" />
+    <ListPreference
+       android:dependency="enable_timer"
+       android:key="key_sleep_timer"
+       android:title="Sleep Timer"
+        android:summary="Stop Playing Music automatically after this time"
+        android:entries="@array/timerList"
+        android:entryValues="@array/timerListValues"
+        />
+    <ListPreference
+        android:key="key_music_quality"
+        android:title="Music Quality"
+        android:summary="Select quality of the music"
+        android:entries="@array/musicQuality"
+        android:entryValues="@array/musicQualityValues"
+        />
+
+    <MultiSelectListPreference
+        android:key="music_type"
+        android:dialogTitle="Select All Your Options"
+        android:title="Types of Music"
+        android:summary="Press to show list"
+        android:entries="@array/musicQuality"
+        android:entryValues="@array/musicQualityValues"
+        />
+</PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Other">
+        <SwitchPreference
+            android:key="enable_notification"
+            android:editable="true"
+            android:title="Push Notifications" />
+
+        <RingtonePreference
+            android:key="key_notifications_ringtone"
+            android:title="Notifications Ringtone"
+            android:summary="Choose Notification Sound"
+            android:ringtoneType="notification"
+            android:dependency="enable_notification"/>
+
+
+    </PreferenceCategory>
+</PreferenceScreen>
